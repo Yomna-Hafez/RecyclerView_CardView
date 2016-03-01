@@ -26,9 +26,6 @@ public class MainActivity extends Activity {
         LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
         rv.setLayoutManager(llm);
 
-       // List<Person> persons = null;
-      //  initializeData(persons);
-
         List<Person> persons;
         persons = new ArrayList<>();
         persons.add(new Person("Yomna Hafez", "23 years old", R.drawable.yomna));
@@ -45,12 +42,6 @@ public class MainActivity extends Activity {
         rv.setAdapter(adapter);
     }
 
-    private void initializeData(List<Person> persons){
-        persons = new ArrayList<>();
-        persons.add(new Person("Yomna Hafez", "23 years old", R.drawable.yomna));
-        persons.add(new Person("Test 1", "25 years old", R.drawable.test1));
-        persons.add(new Person("Test 2", "35 years old", R.drawable.test2));
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
